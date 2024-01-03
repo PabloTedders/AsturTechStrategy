@@ -237,6 +237,9 @@ body {
     cursor: pointer;
 }
 
+.testimony__review{
+    text-align: justify;
+}
 
 
 /* Footer */
