@@ -59,7 +59,6 @@ body {
     font-weight: 200;
     height: 30%;
     width: 45%;
-    
 }
 
 .nav__link {
@@ -80,6 +79,9 @@ body {
     text-decoration: none;
 }
 
+.nav__links:hover{
+    text-decoration: underline;
+}
 .nav__menu {
     margin-left: auto;
     cursor: pointer;
@@ -132,6 +134,11 @@ body {
     border-radius: 32px;
 }
 
+.cta:hover{
+    background-color: white;
+    color: #1c4163;
+}
+
 /* About */
 
 .about {
@@ -174,7 +181,61 @@ body {
    
 }
 
-/* Knowledge */
+/* Testimony */
+
+.testimony{
+    background-color: #e5e5f7;
+}
+
+.testimony__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.testimony__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.testimony__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.testimony__texts{
+    max-width: 700px;
+}
+
+.testimony__course{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.testimony__arrow{
+    width: 90%;
+    cursor: pointer;
+}
 
 
 
@@ -247,6 +308,11 @@ body {
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.footer__submit:hover{
+    color: white;
+    background-color: #1c4163;
 }
 
 .footer__copy{
